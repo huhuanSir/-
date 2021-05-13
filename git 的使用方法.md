@@ -91,6 +91,38 @@
     git merge -abort 忽略其他分支代码，保留当前的分支的代码
 
     手动修改，修改完成后 git commit 添加冲突备注，然后esc 退出 ：wq!  
+    
+18. 查看版本路线
+
+    git log --oneline --graph
+
+19. 删除分支
+
+    git push origin --delete xx 
+
+20. 处理冲突
+
+    git merge xx  然后"i" 修改然后wq!;
+
+21. 不同人修改了相同的代码
+
+    git config --add --local user.name ‘xx'
+
+    git config --add --local user.emaill ‘xx'
+
+    git branch -av   //查看分支 
+
+    git fetch  //获取远程分支
+
+    git checkout -b xx remotes /xx/xx //创建本地分支并和远程分支产生关联
+
+22. 谷歌浏览器的github 的工具
+
+    octotree 
+
+    enhanced github
+
+    gitzip for github
 
 
 
